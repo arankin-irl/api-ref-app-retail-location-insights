@@ -1,0 +1,208 @@
+{
+  "RetailUnitResponse":{
+    "PageOffset":"99",
+    "TotalCount":120,
+    "RetailUnits":{
+      "RetailUnit":[
+        {
+          "CountryCode":"USA",
+          "StateName":"ILLINOIS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"17043840000",
+          "BlockGroup":"170438400002",
+          "CensusBlock":"170438400002025",
+          "State":"17"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48349970300",
+          "BlockGroup":"483499703002",
+          "CensusBlock":"483499703002016",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"INDIANA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"18003010804",
+          "BlockGroup":"180030108041",
+          "CensusBlock":"180030108041008",
+          "State":"18"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"INDIANA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"18043071005",
+          "BlockGroup":"180430710051",
+          "CensusBlock":"180430710051013",
+          "State":"18"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"INDIANA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"18057111008",
+          "BlockGroup":"180571110081",
+          "CensusBlock":"180571110081018",
+          "State":"18"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"INDIANA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"18093951300",
+          "BlockGroup":"180939513002",
+          "CensusBlock":"180939513002031",
+          "State":"18"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"INDIANA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"18165020200",
+          "BlockGroup":"181650202001",
+          "CensusBlock":"181650202001137",
+          "State":"18"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"IOWA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"19153010212",
+          "BlockGroup":"191530102121",
+          "CensusBlock":"191530102121006",
+          "State":"19"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"IOWA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"19163011000",
+          "BlockGroup":"191630110002",
+          "CensusBlock":"191630110002073",
+          "State":"19"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"KENTUCKY",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"21227010200",
+          "BlockGroup":"212270102004",
+          "CensusBlock":"212270102004024",
+          "State":"21"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"LOUISIANA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"22079013800",
+          "BlockGroup":"220790138003",
+          "CensusBlock":"220790138003032",
+          "State":"22"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MARYLAND",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"24019970702",
+          "BlockGroup":"240199707021",
+          "CensusBlock":"240199707021038",
+          "State":"24"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MARYLAND",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"24031700813",
+          "BlockGroup":"240317008132",
+          "CensusBlock":"240317008132010",
+          "State":"24"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MARYLAND",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"24031701213",
+          "BlockGroup":"240317012135",
+          "CensusBlock":"240317012135007",
+          "State":"24"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MARYLAND",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"24043000900",
+          "BlockGroup":"240430009003",
+          "CensusBlock":"240430009003098",
+          "State":"24"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MARYLAND",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"24510090700",
+          "BlockGroup":"245100907002",
+          "CensusBlock":"245100907002007",
+          "State":"24"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MASSACHUSETTS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"25003920102",
+          "BlockGroup":"250039201023",
+          "CensusBlock":"250039201023019",
+          "State":"25"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MASSACHUSETTS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"25017352102",
+          "BlockGroup":"250173521021",
+          "CensusBlock":"250173521021001",
+          "State":"25"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MICHIGAN",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"26115832200",
+          "BlockGroup":"261158322002",
+          "CensusBlock":"261158322002006",
+          "State":"26"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"MISSOURI",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"29183312206",
+          "BlockGroup":"291833122062",
+          "CensusBlock":"291833122062008",
+          "State":"29"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEBRASKA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"31053963600",
+          "BlockGroup":"310539636003",
+          "CensusBlock":"310539636003040",
+          "State":"31"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"ILLINOIS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"17111870803",
+          "BlockGroup":"171118708033",
+          "CensusBlock":"171118708033027",
+          "State":"17"
+        }
+      ]
+    }
+  }
+}

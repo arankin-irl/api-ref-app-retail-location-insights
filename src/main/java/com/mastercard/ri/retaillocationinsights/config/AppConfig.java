@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 MasterCard International.
+ * Copyright 2017 MasterCard International.
  *
  * Redistribution and use in source and binary forms, with or without modification, are
  * permitted provided that the following conditions are met:
@@ -30,30 +30,24 @@ package com.mastercard.ri.retaillocationinsights.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @Configuration
 @ComponentScan("com.mastercard.ri.retaillocationinsights")
-@EnableWebMvc
-public class AppConfig extends WebMvcConfigurerAdapter {
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**")
-                .addResourceLocations("/WEB-INF/static/");
-    }
-
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
-    }
+@PropertySource("application.properties")
+public class AppConfig {
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer placeHolderConfigurer() {
         return new PropertySourcesPlaceholderConfigurer();
+    }
+
+    @Bean(destroyMethod = "shutdown")
+    public ExecutorService executorService() {
+        return Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     }
 }

@@ -1,0 +1,559 @@
+/*
+ * Copyright 2017 MasterCard International.
+ *
+ * Redistribution and use in source and binary forms, with or without modification, are
+ * permitted provided that the following conditions are met:
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
+ * conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice, this list of
+ * conditions and the following disclaimer in the documentation and/or other materials
+ * provided with the distribution.
+ * Neither the name of the MasterCard International Incorporated nor the names of its
+ * contributors may be used to endorse or promote products derived from this software
+ * without specific prior written permission.
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+ * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ */
+
+@font-face {
+  font-family: 'FfMarkLight';
+  src: url('../fonts/ff-mark/light.woff') format('woff'), url('../fonts/ff-mark/light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'FfMarkXLight';
+  src: url('../fonts/ff-mark/xlight.woff') format('woff'), url('../fonts/ff-mark/xlight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'FfMarkMedium';
+  src: url('../fonts/ff-mark/medium.woff') format('woff'), url('../fonts/ff-mark/medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url('../fonts/helvetica/regular.woff') format('woff'), url('../fonts/helvetica/regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: bold;
+  src: local('Helvetica-Bold'), url('../fonts/helvetica/bold.woff') format('woff'), url('../fonts/helvetica/bold.ttf') format('ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  line-height: 1;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: auto;
+}
+
+div.btn {
+  border: 1px solid #fd9827;
+  color: #fd9827;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+div.container {
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: column nowrap;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: none;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Nav bar ---------- */
+
+nav.navbar {
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+
+  transition: all .2s ease-in-out;
+
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: none;
+
+  align-items: center;
+  -ms-flex-align: center;
+
+  padding: 0 3rem;
+  box-shadow: 0px 1px 0px #ccc;
+  z-index: 2;
+}
+
+div.navbar-left {
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: none;
+
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+div.navbar-right {
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: none;
+
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+div.navbar-right .btn {
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+}
+
+img.navbar-menu, img.navbar-cogs, img.navbar-close {
+  display: none;
+}
+
+img.navbar-menu, img.navbar-close {
+  cursor: pointer;
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+}
+
+img.navbar-cogs-text {
+  padding-right: 1.5rem;
+  border-right: 1px solid #e5e5e5;
+}
+
+span.navbar-title {
+  padding-left: 1.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+span.navbar-title {
+  font-family: 'FfMarkLight', 'Helvetica', Arial, sans-serif;
+  font-size: 2rem;
+  color: #262626;
+  transition: all .2s ease-in-out;
+}
+
+div.button-github {
+  font-weight: normal;
+  border: none;
+  padding: 0;
+  margin-right: 2.5rem;
+}
+
+div.button-docs {
+  width: 18rem;
+}
+
+/* ---------- Overlay Menu --------- */
+
+div.overlay-menu {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  background: white;
+  z-index: 2;
+
+  padding-left: 2rem;
+  margin-top: 9rem;
+  transition: all .2s ease-in-out;
+}
+
+div.overlay-menu-open div.overlay-menu,
+div.overlay-menu-open img.navbar-menu,
+div.overlay-menu-open img.navbar-close {
+  display: none;
+}
+
+div.overlay-menu-docs, div.overlay-menu-github {
+  margin-top: 2.5rem;
+  color: #262626;
+
+  font-family: 'FfMarkXLight', 'Helvetica', Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+div.maps-controls-container {
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: column nowrap;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: none;
+}
+
+/* ---------- Google Maps ---------- */
+
+div.map {
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+}
+
+/* ---------- Loading Overlay ---------- */
+
+div.loading-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events:none;
+
+  display: flex;
+  display: -ms-flexbox;
+
+  align-items: center;
+  -ms-flex-align: center;
+
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+div.loading {
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+@keyframes spin-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-anticlockwise {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+div.loading-cogs {
+  width: 15rem;
+  height: 5.5rem;
+  margin-bottom: 1rem;
+}
+
+div.loading-cogs #cls-left,
+div.loading-cogs #cls-right {
+    height: 100%;
+    width: 50%;
+}
+
+div.loading-cogs #cls-left {
+  margin-left: 8%;
+  animation: spin-clockwise 2s linear infinite;
+}
+
+div.loading-cogs #cls-right {
+  animation: spin-anticlockwise 2s linear infinite;
+  margin-left: -18%;
+}
+
+div.loading-text {
+  font-family: 'FfMarkLight', 'Helvetica', Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+/* ---------- Controls ---------- */
+
+div.controls-container {
+  font-family: 'FfMarkLight', 'Helvetica', Arial, sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0 0 1rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  line-height: 2rem;
+}
+
+div.period-container {
+  padding: .5rem 1rem;
+}
+
+div.category-metrics-container {
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: column nowrap;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: none;
+}
+
+div.category-input-container,
+div.metrics-input-container {
+  padding: .5rem 1rem;
+
+  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: none;
+
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+
+  align-items: center;
+  -ms-flex-align: center;
+
+  display: flex;
+  display: -ms-flexbox;
+}
+
+div.category-input-container label,
+div.metrics-input-container label {
+  display: inline-block;
+  min-width: 10rem;
+  margin-right: 0.5rem;
+}
+
+div.control-input select {
+  width: 18rem;
+}
+
+ul.select2-results__options {
+  font-family: 'FfMarkLight', 'Helvetica', Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+/* ---------- Legend ---------- */
+
+div.legend {
+  display: flex;
+  display: -ms-flexbox;
+
+  flex-flow: row nowrap;
+  -ms-flex-direction: row;
+  -ms-flex-wrap: none;
+
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+div.legend > div:first-child {
+  margin: 0 0.5rem 0 0;
+  padding: 0.5rem 0;
+}
+
+div.scores > div {
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.score-color {
+  width: 4rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.score-860 {
+  color: white;
+  background: #004B19;
+}
+
+.score-710 {
+  color: white;
+  background: #016B25;
+}
+
+.score-570 {
+  color: white;
+  background: #24AF3C;
+}
+
+.score-430 {
+  background: #10E11F;
+}
+
+.score-290 {
+  background: #6AED1F;
+}
+
+.score-140 {
+  background: #9DFF74;
+}
+
+.score-0 {
+  background: #C9FFAE;
+}
+
+/* ---------- Metrics ---------- */
+div.metrics > div {
+  padding: 0.5rem 0;
+}
+
+/* ---------- Media Queries ---------- */
+
+@media all and (max-width: 899px) {
+  nav.navbar {
+    padding: 0 2rem;
+  }
+
+  span.navbar-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+  nav.navbar {
+    padding: 0 2rem;
+    height: 9rem;
+  }
+
+  img.navbar-menu, img.navbar-cogs {
+    display: inline;
+  }
+
+  img.navbar-cogs-text {
+    display: none;
+  }
+
+  div.navbar-left {
+    flex-flow: column nowrap;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: none;
+
+    justify-content: center;
+    -ms-flex-align: center;
+
+    padding: 0;
+  }
+
+  span.navbar-title {
+    padding: 0;
+    margin: 0;
+    margin-top: 1.2rem;
+  }
+
+  div.navbar-right {
+    display: none;
+  }
+
+  div.overlay-menu-open div.overlay-menu {
+    display: block;
+  }
+
+  div.overlay-menu-open img.navbar-menu {
+    display: none;
+  }
+
+  div.overlay-menu-open img.navbar-close {
+    display: inline;
+  }
+
+  div.category-metrics-container {
+    flex-flow: row nowrap;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: none;
+  }
+
+  div.controls-container {
+    margin: 0;
+    box-shadow: none;
+    max-height: none;
+  }
+
+  div.category-input-container,
+  div.metrics-input-container {
+    flex-flow: row wrap;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+  }
+
+  div.category-input-container label,
+  div.metrics-input-container label {
+    min-width: initial;
+  }
+}
+
+@media all and (max-width: 420px) {
+  div.category-metrics-container {
+    flex-flow: row wrap;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+  }
+
+  div.category-input-container,
+  div.metrics-input-container {
+    flex-flow: row nowrap;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: none;
+
+    justify-content: space-between;
+    -ms-flex-align: space-between;
+  }
+}

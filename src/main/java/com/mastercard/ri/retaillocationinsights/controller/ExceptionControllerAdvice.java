@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 MasterCard International.
+ * Copyright 2017 MasterCard International.
  *
  * Redistribution and use in source and binary forms, with or without modification, are
  * permitted provided that the following conditions are met:
@@ -27,58 +27,38 @@
 
 package com.mastercard.ri.retaillocationinsights.controller;
 
+import com.mastercard.api.core.exception.ApiException;
+import com.mastercard.ri.retaillocationinsights.dto.ErrorDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 public class ExceptionControllerAdvice {
-    private static final Logger logger = LoggerFactory.getLogger(ExceptionControllerAdvice.class);
+    private static final Logger log = LoggerFactory.getLogger(ExceptionControllerAdvice.class);
 
-//    @ExceptionHandler(ApiException.class)
-//    public ResponseEntity handleApiException(ApiException ex) {
-//        return handleThrowable(ex);
-//    }
-//
-//    @ExceptionHandler(TypeMismatchException.class)
-//    protected ResponseEntity handleTypeMismatch(TypeMismatchException ex) {
-//        logger.error(ex.toString(), ex);
-//
-//        Error error = new Error();
-//        error.setSource("Input");
-//        error.setReason("Value '" + ex.getValue() + "' is not of required type '" + ex.getRequiredType().getSimpleName() + "'.");
-//
-//        Errors errors = new Errors();
-//        errors.addErrorItem(error);
-//
-//        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
-//    }
-//
-//    @ExceptionHandler(MissingServletRequestParameterException.class)
-//    protected ResponseEntity handleMissingRequestParameter(MissingServletRequestParameterException ex) {
-//        logger.error(ex.toString(), ex);
-//
-//        Error error = new Error();
-//        error.setSource("Input");
-//        error.setReason(ex.getMessage());
-//
-//        Errors errors = new Errors();
-//        errors.addErrorItem(error);
-//
-//        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
-//    }
-//
-//    @ExceptionHandler(Throwable.class)
-//    public ResponseEntity handleThrowable(Throwable ex) {
-//        logger.error(ex.toString(), ex);
-//
-//        Error error = new Error();
-//        error.setSource("System");
-//        error.setReason(ex.getMessage());
-//
-//        Errors errors = new Errors();
-//        errors.addErrorItem(error);
-//
-//        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
-//    }
+    @ExceptionHandler(ApiException.class)
+    public ResponseEntity handleApiException(ApiException ex) {
+        return handleThrowable(ex);
+    }
+
+    @ExceptionHandler(MissingServletRequestParameterException.class)
+    public ResponseEntity handleMissingRequestParameter(MissingServletRequestParameterException ex) {
+        log.error(ex.toString(), ex);
+
+        ErrorDto error = new ErrorDto(ex.getMessage());
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(Throwable.class)
+    public ResponseEntity handleThrowable(Throwable ex) {
+        log.error(ex.toString(), ex);
+
+        ErrorDto error = new ErrorDto("An unexpected error has occurred.");
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
 }

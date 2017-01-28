@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 MasterCard International.
+ * Copyright 2017 MasterCard International.
  *
  * Redistribution and use in source and binary forms, with or without modification, are
  * permitted provided that the following conditions are met:
@@ -41,8 +41,7 @@ import javax.annotation.PostConstruct;
 @Configuration
 @PropertySource("mastercard-api.properties")
 public class MastercardApiConfig {
-
-    private static final Logger logger = LoggerFactory.getLogger(MastercardApiConfig.class);
+    private static final Logger log = LoggerFactory.getLogger(MastercardApiConfig.class);
 
     @Value("${mastercard.api.consumer.key}")
     private String consumerKey;
@@ -64,8 +63,8 @@ public class MastercardApiConfig {
 
     @PostConstruct
     public void setupApiConfiguration() throws Exception {
-        logger.debug("setupApiConfiguration");
-        logger.debug(".p12 file path = {}", p12Path.getURI());
+        log.debug("setupApiConfiguration");
+        log.debug(".p12 file path = {}", p12Path.getURI());
 
         ApiConfig.setDebug(debug);
         ApiConfig.setSandbox(sandbox);

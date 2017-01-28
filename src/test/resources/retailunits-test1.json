@@ -1,0 +1,892 @@
+{
+  "RetailUnitResponse":{
+    "PageOffset":"0",
+    "TotalCount":120,
+    "RetailUnits":{
+      "RetailUnit":[
+        {
+          "CountryCode":"USA",
+          "StateName":"ARIZONA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"04013420206",
+          "BlockGroup":"040134202061",
+          "CensusBlock":"040134202061034",
+          "State":"04"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"ARIZONA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"04013615200",
+          "BlockGroup":"040136152001",
+          "CensusBlock":"040136152001004",
+          "State":"04"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"ARIZONA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"04013616000",
+          "BlockGroup":"040136160001",
+          "CensusBlock":"040136160001018",
+          "State":"04"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"ARKANSAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"05131000800",
+          "BlockGroup":"051310008004",
+          "CensusBlock":"051310008004012",
+          "State":"05"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06001403702",
+          "BlockGroup":"060014037022",
+          "CensusBlock":"060014037022003",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06001436402",
+          "BlockGroup":"060014364021",
+          "CensusBlock":"060014364021001",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06019005507",
+          "BlockGroup":"060190055072",
+          "CensusBlock":"060190055072012",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06023010901",
+          "BlockGroup":"060230109013",
+          "CensusBlock":"060230109013030",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06037117303",
+          "BlockGroup":"060371173032",
+          "CensusBlock":"060371173032000",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06041119201",
+          "BlockGroup":"060411192011",
+          "CensusBlock":"060411192011002",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06059052524",
+          "BlockGroup":"060590525245",
+          "CensusBlock":"060590525245038",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06059075812",
+          "BlockGroup":"060590758121",
+          "CensusBlock":"060590758121008",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06061022013",
+          "BlockGroup":"060610220133",
+          "CensusBlock":"060610220133134",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06061022500",
+          "BlockGroup":"060610225002",
+          "CensusBlock":"060610225002028",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06065043601",
+          "BlockGroup":"060650436011",
+          "CensusBlock":"060650436011012",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06071007404",
+          "BlockGroup":"060710074045",
+          "CensusBlock":"060710074045008",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06071008200",
+          "BlockGroup":"060710082001",
+          "CensusBlock":"060710082001015",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06095252502",
+          "BlockGroup":"060952525022",
+          "CensusBlock":"060952525022000",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"COLORADO",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"08023972700",
+          "BlockGroup":"080239727001",
+          "CensusBlock":"080239727001028",
+          "State":"08"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"DELAWARE",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"10003011500",
+          "BlockGroup":"100030115002",
+          "CensusBlock":"100030115002000",
+          "State":"10"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12011060116",
+          "BlockGroup":"120110601161",
+          "CensusBlock":"120110601161002",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12011080102",
+          "BlockGroup":"120110801021",
+          "CensusBlock":"120110801021023",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12011090602",
+          "BlockGroup":"120110906021",
+          "CensusBlock":"120110906021001",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12019030201",
+          "BlockGroup":"120190302012",
+          "CensusBlock":"120190302012039",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12057012103",
+          "BlockGroup":"120570121031",
+          "CensusBlock":"120570121031034",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12069031101",
+          "BlockGroup":"120690311011",
+          "CensusBlock":"120690311011040",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12081002017",
+          "BlockGroup":"120810020171",
+          "CensusBlock":"120810020171070",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12086003804",
+          "BlockGroup":"120860038041",
+          "CensusBlock":"120860038041012",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12086006802",
+          "BlockGroup":"120860068021",
+          "CensusBlock":"120860068021000",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12086012800",
+          "BlockGroup":"120860128003",
+          "CensusBlock":"120860128003008",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12086015200",
+          "BlockGroup":"120860152001",
+          "CensusBlock":"120860152001043",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12095018200",
+          "BlockGroup":"120950182002",
+          "CensusBlock":"120950182002091",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12099003504",
+          "BlockGroup":"120990035041",
+          "CensusBlock":"120990035041014",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12099006401",
+          "BlockGroup":"120990064012",
+          "CensusBlock":"120990064012010",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12105015500",
+          "BlockGroup":"121050155002",
+          "CensusBlock":"121050155002000",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12115002712",
+          "BlockGroup":"121150027121",
+          "CensusBlock":"121150027121171",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW HAMPSHIRE",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"33011016201",
+          "BlockGroup":"330110162012",
+          "CensusBlock":"330110162012002",
+          "State":"33"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW JERSEY",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"34013000800",
+          "BlockGroup":"340130008002",
+          "CensusBlock":"340130008002002",
+          "State":"34"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW JERSEY",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"34015501103",
+          "BlockGroup":"340155011032",
+          "CensusBlock":"340155011032023",
+          "State":"34"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36005028400",
+          "BlockGroup":"360050284001",
+          "CensusBlock":"360050284001010",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36027300000",
+          "BlockGroup":"360273000002",
+          "CensusBlock":"360273000002007",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36059406501",
+          "BlockGroup":"360594065015",
+          "CensusBlock":"360594065015003",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36059416600",
+          "BlockGroup":"360594166003",
+          "CensusBlock":"360594166003001",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36063022300",
+          "BlockGroup":"360630223001",
+          "CensusBlock":"360630223001001",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36075021101",
+          "BlockGroup":"360750211011",
+          "CensusBlock":"360750211011019",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NEW YORK",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"36081001800",
+          "BlockGroup":"360810018001",
+          "CensusBlock":"360810018001000",
+          "State":"36"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NORTH CAROLINA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"37039930400",
+          "BlockGroup":"370399304005",
+          "CensusBlock":"370399304005036",
+          "State":"37"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NORTH CAROLINA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"37053110101",
+          "BlockGroup":"370531101011",
+          "CensusBlock":"370531101011122",
+          "State":"37"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NORTH CAROLINA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"37081010602",
+          "BlockGroup":"370810106022",
+          "CensusBlock":"370810106022006",
+          "State":"37"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NORTH CAROLINA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"37105030101",
+          "BlockGroup":"371050301011",
+          "CensusBlock":"371050301011018",
+          "State":"37"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"NORTH DAKOTA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"38089963400",
+          "BlockGroup":"380899634002",
+          "CensusBlock":"380899634002048",
+          "State":"38"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OHIO",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"39035105602",
+          "BlockGroup":"390351056022",
+          "CensusBlock":"390351056022008",
+          "State":"39"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OHIO",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"39035117202",
+          "BlockGroup":"390351172022",
+          "CensusBlock":"390351172022012",
+          "State":"39"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OHIO",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"39049009220",
+          "BlockGroup":"390490092201",
+          "CensusBlock":"390490092201000",
+          "State":"39"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OHIO",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"39113125000",
+          "BlockGroup":"391131250003",
+          "CensusBlock":"391131250003001",
+          "State":"39"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OKLAHOMA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"40027200500",
+          "BlockGroup":"400272005001",
+          "CensusBlock":"400272005001017",
+          "State":"40"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OKLAHOMA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"40111000901",
+          "BlockGroup":"401110009012",
+          "CensusBlock":"401110009012039",
+          "State":"40"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OKLAHOMA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"40137000800",
+          "BlockGroup":"401370008002",
+          "CensusBlock":"401370008002468",
+          "State":"40"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"OREGON",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"41051008201",
+          "BlockGroup":"410510082011",
+          "CensusBlock":"410510082011020",
+          "State":"41"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"PENNSYLVANIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"42001030400",
+          "BlockGroup":"420010304001",
+          "CensusBlock":"420010304001070",
+          "State":"42"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"PENNSYLVANIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"42019912700",
+          "BlockGroup":"420199127004",
+          "CensusBlock":"420199127004055",
+          "State":"42"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"PENNSYLVANIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"42077006703",
+          "BlockGroup":"420770067033",
+          "CensusBlock":"420770067033043",
+          "State":"42"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"PENNSYLVANIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"42101026100",
+          "BlockGroup":"421010261002",
+          "CensusBlock":"421010261002000",
+          "State":"42"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"PENNSYLVANIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"42129808401",
+          "BlockGroup":"421298084012",
+          "CensusBlock":"421298084012001",
+          "State":"42"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"SOUTH CAROLINA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"45055970904",
+          "BlockGroup":"450559709042",
+          "CensusBlock":"450559709042002",
+          "State":"45"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TENNESSEE",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"47011010700",
+          "BlockGroup":"470110107004",
+          "CensusBlock":"470110107004001",
+          "State":"47"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TENNESSEE",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"47037016000",
+          "BlockGroup":"470370160001",
+          "CensusBlock":"470370160001010",
+          "State":"47"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TENNESSEE",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"47037017901",
+          "BlockGroup":"470370179014",
+          "CensusBlock":"470370179014029",
+          "State":"47"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48157671502",
+          "BlockGroup":"481576715021",
+          "CensusBlock":"481576715021018",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48201313600",
+          "BlockGroup":"482013136001",
+          "CensusBlock":"482013136001036",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48201511100",
+          "BlockGroup":"482015111001",
+          "CensusBlock":"482015111001001",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48201554401",
+          "BlockGroup":"482015544011",
+          "CensusBlock":"482015544011008",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48245001100",
+          "BlockGroup":"482450011002",
+          "CensusBlock":"482450011002010",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48329000500",
+          "BlockGroup":"483290005003",
+          "CensusBlock":"483290005003019",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"TEXAS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"48355006200",
+          "BlockGroup":"483550062002",
+          "CensusBlock":"483550062002030",
+          "State":"48"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"UTAH",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"49035112100",
+          "BlockGroup":"490351121005",
+          "CensusBlock":"490351121005005",
+          "State":"49"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"UTAH",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"49053270700",
+          "BlockGroup":"490532707004",
+          "CensusBlock":"490532707004020",
+          "State":"49"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"UTAH",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"49057210100",
+          "BlockGroup":"490572101002",
+          "CensusBlock":"490572101002128",
+          "State":"49"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"VIRGINIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"51059482202",
+          "BlockGroup":"510594822022",
+          "CensusBlock":"510594822022015",
+          "State":"51"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"VIRGINIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"51153900201",
+          "BlockGroup":"511539002011",
+          "CensusBlock":"511539002011008",
+          "State":"51"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"VIRGINIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"51197050200",
+          "BlockGroup":"511970502003",
+          "CensusBlock":"511970502003004",
+          "State":"51"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"WASHINGTON",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"53033001100",
+          "BlockGroup":"530330011001",
+          "CensusBlock":"530330011001000",
+          "State":"53"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"WASHINGTON",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"53033023202",
+          "BlockGroup":"530330232021",
+          "CensusBlock":"530330232021003",
+          "State":"53"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"WASHINGTON",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"53061052604",
+          "BlockGroup":"530610526041",
+          "CensusBlock":"530610526041001",
+          "State":"53"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"WEST VIRGINIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"54011002000",
+          "BlockGroup":"540110020002",
+          "CensusBlock":"540110020002032",
+          "State":"54"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"WISCONSIN",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"55035000803",
+          "BlockGroup":"550350008032",
+          "CensusBlock":"550350008032014",
+          "State":"55"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12071001914",
+          "BlockGroup":"120710019141",
+          "CensusBlock":"120710019141010",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12071050305",
+          "BlockGroup":"120710503051",
+          "CensusBlock":"120710503051078",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"ARIZONA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"04013061021",
+          "BlockGroup":"040130610211",
+          "CensusBlock":"040130610211030",
+          "State":"04"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"CALIFORNIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"06037670100",
+          "BlockGroup":"060376701001",
+          "CensusBlock":"060376701001003",
+          "State":"06"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12127080400",
+          "BlockGroup":"121270804003",
+          "CensusBlock":"121270804003003",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"FLORIDA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"12127092500",
+          "BlockGroup":"121270925002",
+          "CensusBlock":"121270925002002",
+          "State":"12"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"GEORGIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"13103030203",
+          "BlockGroup":"131030302032",
+          "CensusBlock":"131030302032024",
+          "State":"13"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"GEORGIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"13121002800",
+          "BlockGroup":"131210028001",
+          "CensusBlock":"131210028001031",
+          "State":"13"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"GEORGIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"13121007900",
+          "BlockGroup":"131210079003",
+          "CensusBlock":"131210079003058",
+          "State":"13"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"GEORGIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"13139001101",
+          "BlockGroup":"131390011011",
+          "CensusBlock":"131390011011023",
+          "State":"13"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"GEORGIA",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"13233010700",
+          "BlockGroup":"132330107001",
+          "CensusBlock":"132330107001020",
+          "State":"13"
+        },
+        {
+          "CountryCode":"USA",
+          "StateName":"ILLINOIS",
+          "CountryName":"UNITED STATES",
+          "CensusTract":"17031815600",
+          "BlockGroup":"170318156001",
+          "CensusBlock":"170318156001002",
+          "State":"17"
+        }
+      ]
+    }
+  }
+}

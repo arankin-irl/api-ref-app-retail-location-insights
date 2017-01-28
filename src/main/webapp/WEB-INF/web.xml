@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Copyright 2016 MasterCard International.
+    Copyright 2017 MasterCard International.
 
     Redistribution and use in source and binary forms, with or without modification, are
     permitted provided that the following conditions are met:
@@ -42,6 +42,16 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
+    <filter>
+        <filter-name>CompressingFilter</filter-name>
+        <filter-class>com.github.ziplet.filter.compression.CompressingFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CompressingFilter</filter-name>
+        <url-pattern>/api/*</url-pattern>
+    </filter-mapping>
 
     <servlet>
         <servlet-name>appServlet</servlet-name>

@@ -1,0 +1,142 @@
+<!--
+  Copyright 2017 MasterCard International.
+
+  Redistribution and use in source and binary forms, with or without modification, are
+  permitted provided that the following conditions are met:
+
+  Redistributions of source code must retain the above copyright notice, this list of
+  conditions and the following disclaimer.
+  Redistributions in binary form must reproduce the above copyright notice, this list of
+  conditions and the following disclaimer in the documentation and/or other materials
+  provided with the distribution.
+  Neither the name of the MasterCard International Incorporated nor the names of its
+  contributors may be used to endorse or promote products derived from this software
+  without specific prior written permission.
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+  SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+  IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+
+-->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>Retail Location Insights Reference App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/sanitize.css"/>
+    <link rel="stylesheet" href="css/select2.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="js/presenter.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+  <div id="container" class="container">
+    <!-- Overlay menu -->
+    <div id="overlay-menu" class="overlay-menu">
+      <div class="overlay-menu-docs">
+        <a href="//developer.mastercard.com/documentation/retail-location-insights" target="_blank">
+          View Documentation
+        </a>
+      </div>
+      <div class="overlay-menu-github">
+        <a href="//github.com/MasterCard/api-ref-app-retail-location-insights" target="_blank">
+          View on Github
+        </a>
+      </div>
+    </div>
+    <!-- Nav bar -->
+    <nav id="navbar" class="navbar">
+      <div class="navbar-left">
+        <img class="navbar-menu" src="images/menu.svg" onclick="openOverlayMenu()" />
+        <img class="navbar-close" src="images/close.svg" onclick="closeOverlayMenu()" />
+        <img class="navbar-cogs" src="images/cogs.svg" />
+        <img class="navbar-cogs-text" src="images/mc_dev_logo_hrz.svg" />
+        <span class="navbar-title">Retail Location Insights Reference App</span>
+      </div>
+
+      <div class="navbar-right">
+        <div class="btn button-github">
+          <a href="//github.com/MasterCard/api-ref-app-retail-location-insights" target="_blank">
+            View on Github
+          </a>
+        </div>
+        <div class="btn button-docs">
+          <a href="//developer.mastercard.com/documentation/retail-location-insights" target="_blank">
+            View Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Legend -->
+    <div id="legend" class="legend hide">
+        <div>Legend</div>
+        <div class="scores">
+          <div class="score-color score-860">860</div>
+          <div class="score-color score-710">710</div>
+          <div class="score-color score-570">570</div>
+          <div class="score-color score-430">430</div>
+          <div class="score-color score-290">290</div>
+          <div class="score-color score-140">140</div>
+          <div class="score-color score-0">0</div>
+        </div>
+    </div>
+    <!-- Map + Controls -->
+    <div class="maps-controls-container">
+      <div id="map" class="map"></div>
+      <div id="loading-overlay" class="loading-overlay hide">
+        <div class="loading">
+          <div class="loading-cogs">
+            <svg id="cls-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path fill="#999999" d="M149.6 67.2c-.5-.4-1.2-.8-2.6-1.1-3.6-.7-9.6-1.1-13.7-1.1-.6-3.6-1.5-7.1-2.8-10.5 3.5-2.1 8.4-5.4 11.2-7.8 1-.8 1.4-1.5 1.6-2.1-1.1-2.5-2.3-4.9-3.7-7.3-1.3-2.2-2.6-4.3-4.1-6.3-.6-.1-1.5-.1-2.7.3-3.5 1.2-8.8 3.8-12.4 5.8-2.3-2.8-4.9-5.4-7.7-7.7 2-3.5 4.6-8.9 5.8-12.3.4-1.2.4-2 .4-2.6-2.2-1.6-4.5-3.1-6.9-4.5-2.2-1.3-4.4-2.4-6.7-3.4-.6.2-1.3.6-2.2 1.7-2.4 2.8-5.7 7.7-7.7 11.2-3.4-1.3-6.9-2.2-10.6-2.8 0-4.1-.5-9.9-1.1-13.5-.2-1.3-.6-2-1-2.5-2.5-.5-5.2-.7-8-.7-2.5 0-5.1.1-7.5.4-.4.5-.8 1.2-1.1 2.6-.7 3.5-1.1 9.3-1.1 13.4-3.7.6-7.2 1.5-10.6 2.8-2.1-3.5-5.3-8.3-7.7-11.1-.8-1-1.5-1.4-2.1-1.6-2.5 1.1-4.9 2.3-7.3 3.7-2.2 1.3-4.3 2.6-6.3 4.1-.1.6-.1 1.5.3 2.7 1.2 3.4 3.8 8.6 5.7 12.2-2.8 2.3-5.4 5-7.8 7.8-3.5-2-8.7-4.5-12.1-5.7-1.2-.4-2-.4-2.6-.4-1.6 2.2-3.1 4.5-4.5 6.9-1.3 2.2-2.4 4.4-3.4 6.7.2.6.6 1.3 1.7 2.2 2.7 2.3 7.5 5.6 11 7.6-1.3 3.4-2.2 7-2.8 10.7-4.1.1-9.8.5-13.3 1.1-1.3.2-2 .6-2.5 1-.5 2.7-.7 5.4-.7 8.2 0 2.5.1 5.1.4 7.5.5.4 1.2.8 2.6 1.1 3.6.6 9.3 1.1 13.3 1.1.6 3.7 1.6 7.3 2.8 10.7-3.5 2.1-8.2 5.3-11 7.6-1 .8-1.4 1.5-1.6 2.1 1.1 2.5 2.3 4.9 3.7 7.3 1.3 2.2 2.6 4.3 4.1 6.3.6.1 1.5.1 2.7-.3 3.4-1.2 8.6-3.7 12.1-5.7 2.4 2.8 5 5.4 7.8 7.8-2 3.5-4.5 8.7-5.7 12.2-.4 1.2-.4 2-.4 2.6 2.2 1.6 4.5 3.1 6.9 4.5 2.2 1.3 4.4 2.4 6.7 3.4.6-.2 1.3-.6 2.2-1.7 2.4-2.8 5.6-7.6 7.7-11.1 3.4 1.3 7 2.2 10.6 2.8.1 4.1.5 9.9 1.1 13.5.2 1.3.6 2 1 2.5 2.7.3 5.4.5 8.2.5 2.5 0 5.1-.1 7.5-.4.4-.5.8-1.2 1.1-2.6.7-3.6 1.1-9.5 1.1-13.5 3.6-.6 7.2-1.6 10.6-2.8 2.1 3.5 5.4 8.4 7.7 11.2.8 1 1.5 1.4 2.1 1.6 2.5-1.1 4.9-2.3 7.3-3.7 2.2-1.3 4.3-2.6 6.3-4.1.1-.6.1-1.5-.3-2.7-1.2-3.5-3.8-8.8-5.8-12.3 2.8-2.3 5.4-4.9 7.7-7.7 3.5 2 8.9 4.6 12.4 5.8 1.2.4 2 .4 2.6.4 1.6-2.2 3.1-4.5 4.5-6.9 1.3-2.2 2.4-4.4 3.4-6.7-.2-.6-.6-1.3-1.7-2.2-2.8-2.4-7.7-5.7-11.2-7.8 1.2-3.4 2.2-6.9 2.8-10.5 4.1 0 10-.5 13.7-1.1 1.3-.2 2-.6 2.5-1 .3-2.7.5-5.4.5-8.2 0-2.7-.1-5.2-.4-7.6zM75 100.7c-14.2 0-25.7-11.5-25.7-25.7S60.8 49.3 75 49.3s25.7 11.5 25.7 25.7-11.5 25.7-25.7 25.7z"/></svg>
+            <svg id="cls-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path fill="#DBDBDB" d="M147.8 85.2c-3.4-1.6-9-3.5-13-4.7.3-3.7.3-7.4 0-11 4-1.1 9.6-3.1 13-4.7 1.2-.6 1.8-1.1 2.2-1.6-.4-2.7-1-5.4-1.7-8.1-.7-2.5-1.5-4.9-2.3-7.3-.6-.3-1.4-.5-2.8-.4-3.7.3-9.6 1.5-13.6 2.5-1.5-3.3-3.4-6.5-5.5-9.5 2.9-2.9 6.8-7.5 9-10.6.7-1.1 1-1.9 1-2.5-1.7-2.1-3.6-4.2-5.6-6.2-1.8-1.8-3.7-3.5-5.7-5.1-.7.1-1.5.3-2.6 1.1-3.1 2.1-7.6 6.1-10.6 9-3-2.2-6.2-4-9.5-5.5 1-4 2.2-9.9 2.5-13.6.1-1.3-.1-2.1-.3-2.7-2.6-1-5.2-1.9-7.9-2.6-2.5-.7-5-1.2-7.5-1.6-.5.4-1.1 1-1.7 2.2-1.6 3.4-3.5 9.1-4.7 13-3.7-.3-7.4-.3-11 0-1.1-4-3.1-9.6-4.7-13-.6-1.2-1.1-1.8-1.6-2.2-2.7.4-5.4 1-8.1 1.7-2.5.7-4.9 1.5-7.3 2.3-.3.6-.5 1.4-.4 2.8.3 3.7 1.4 9.5 2.5 13.5-3.3 1.5-6.5 3.4-9.6 5.5-2.9-2.9-7.4-6.8-10.5-8.9-1.1-.7-1.9-1-2.5-1-2.1 1.7-4.2 3.6-6.2 5.6-1.8 1.8-3.5 3.7-5.1 5.7.1.7.3 1.5 1.1 2.6 2.1 3 6 7.5 8.8 10.4-2.2 3.1-4.1 6.3-5.6 9.6-4-1-9.8-2.1-13.4-2.4-1.3-.1-2.1.1-2.7.3-1 2.6-1.9 5.2-2.6 7.9-.7 2.5-1.2 5-1.6 7.5.4.5 1 1.1 2.2 1.7 3.3 1.6 8.9 3.5 12.8 4.6-.3 3.7-.4 7.4 0 11.2-3.9 1.1-9.5 3-12.8 4.6C1 85.9.4 86.4 0 86.9c.4 2.7 1 5.4 1.7 8.1.7 2.5 1.5 4.9 2.3 7.3.6.3 1.4.5 2.8.4 3.6-.3 9.4-1.4 13.3-2.4 1.5 3.4 3.4 6.6 5.6 9.7-2.9 2.9-6.7 7.3-8.8 10.3-.7 1.1-1 1.9-1 2.5 1.7 2.1 3.6 4.2 5.6 6.2 1.8 1.8 3.7 3.5 5.7 5.1.7-.1 1.5-.3 2.6-1.1 3-2.1 7.4-5.9 10.3-8.8 3.1 2.2 6.3 4.1 9.7 5.6-1 4-2.1 9.7-2.4 13.3-.1 1.3.1 2.1.3 2.7 2.6 1 5.2 1.9 7.9 2.6 2.5.7 5 1.2 7.5 1.6.5-.4 1.1-1 1.7-2.2 1.6-3.3 3.5-8.8 4.6-12.8 3.7.3 7.4.3 11.2 0 1.1 4 3 9.5 4.6 12.8.6 1.2 1.1 1.8 1.6 2.2 2.7-.4 5.4-1 8.1-1.7 2.5-.7 4.9-1.4 7.3-2.3.3-.6.5-1.4.4-2.8-.3-3.7-1.4-9.4-2.4-13.4 3.3-1.5 6.5-3.4 9.6-5.6 2.9 2.9 7.4 6.7 10.4 8.8 1.1.7 1.9 1 2.5 1 2.1-1.7 4.2-3.6 6.2-5.6 1.8-1.8 3.5-3.7 5.1-5.7-.1-.7-.3-1.5-1.1-2.6-2.1-3.1-6-7.5-8.9-10.5 2.2-3.1 4-6.3 5.5-9.6 4 1 9.8 2.2 13.5 2.5 1.3.1 2.1-.1 2.7-.3 1-2.6 1.9-5.2 2.6-7.9.7-2.5 1.2-5 1.6-7.5-.3-.4-.9-1-2.1-1.6zM75 101.1c-14.4 0-26.1-11.7-26.1-26.1S60.6 48.9 75 48.9s26.1 11.7 26.1 26.1-11.7 26.1-26.1 26.1z"/></svg>
+          </div>
+          <div class="loading-text">Loading… Please wait.</div>
+        </div>
+      </div>
+      <div id="controls-container" class="controls-container hide">
+        <div class="period-container">
+            <label for="periodSelect" class="control-label">Sandbox data for </label>
+            <span id="periodSpan" class="control-label hide"></span>
+            <select id="periodSelect" class="control-input hide"></select>
+        </div>
+        <div class="category-metrics-container">
+          <div class="category-input-container">
+              <label for="categorySelect" class="control-label">Category:</label>
+              <div class="control-input">
+                <select id="categorySelect"></select>
+              </div>
+          </div>
+          <div class="metrics-input-container">
+              <label for="metricSelect" class="control-label">Metric:</label>
+              <div class="control-input">
+                <select id="metricSelect">
+                  <option value="composite">Composite Upfront</option>
+                  <option value="ticketSize">Ticket Size</option>
+                  <option value="transactions">Transactions</option>
+                  <option value="sales">Sales</option>
+                  <option value="stability">Stability</option>
+                  <option value="growth">Growth</option>
+                </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=${google.maps.api.key}&callback=initMap" async defer></script>
+</body>
+</html>
